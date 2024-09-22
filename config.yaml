@@ -1,0 +1,132 @@
+baseURL: https://desmond.ducy.dev/
+languageCode: en-us
+publishDir: ../desmo.github.io
+build:
+  writeStats: true
+params:
+  title: Desmond Ducy
+  author: Desmond Ducy
+  description: Desmond Ducy portfolio.
+  copyright: >-
+    powered by [hugo](https://gohugo.io/) & © 2024
+  theme:
+    mainTheme: dark
+    showAttribute: true
+    singlePage: false
+  favicons:
+    use: true
+    metas: |2-
+              <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+              <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+              <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+              <link rel="manifest" href="site.webmanifest">
+              <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+              <link rel="shortcut icon" href="favicon.ico">
+
+  profile:
+    name: "Desmond Ducy"
+    tagline: "Polyglot Developer"
+    location: "Ohio"
+    photo: profile.jpg
+  social:
+    title: Links
+    list:
+      - icon: fab fa-github
+        url: "https://github.com/DesmoDeuce/"
+        title: GitHub
+      - icon: fab fa-instagram
+        url: "https://instagram.com/desmondducy"
+        title: Instagram
+  showInAccordion:
+    - item: aboutme
+      expand: true
+    - item: experience
+    - item: education
+    - item: project
+    - item: skill
+    - item: hobby
+  aboutme:
+    title: About Me
+    icon: fas fa-user
+    description: I am an aspiring computer scientist with a background in games programming & code based graphic design with Java and Python.
+  experience:
+    title: Experience and Volunteering
+    icon: fas fa-briefcase
+    list:
+      - position: Graphic Designer
+        dates: 2021 - *Present*
+        company: Good Medicine Productions
+        details: |1-
+          - Worked in a volunteer capacity for a non-profit focused on providing interactive theatre experiences for sick people.
+          - Created advertisements for theater camps using graphic design tools.
+          - Performed other graphic design duties as necessary.
+      - position: Sound and Lighting Technician
+        dates: 2024 - *Present*
+        company: Westerville South Theatre
+        details: |1-
+          - Operated sound and lights for theatre rentals.
+  education:
+    title: Education
+    icon: fas fa-graduation-cap
+    list:
+      - degree: 6th-9th Grade
+        college: Metro Early College Middle and High School
+        dates: 2019-2023
+        thesis_title: >
+          Metro's vision is to provide a small and intellectually vibrant learning community
+          designed to serve students who want a personalized learning experience that prepares
+          them for a connected world where math, science, and technology are vitally important.
+          All Metro students engage in a personally relevant and academically rigorous
+          curriculum within a safe and trusting environment.
+        thesis_url:
+      - degree: 10th Grade-Present
+        college: Westerville South High School
+        dates: 2023-Present
+        thesis_title: >
+          Pursuing International Baccalaureate (IB) Diploma while participating in Westerville
+          South's award winning theatre program. Through this course of study, I currently take
+          theatre IB courses, and contribute in a variety of ways to Westerville troupe 513,
+          including acting, dancing, singing, sound design, assistant choreography, and assistant
+          stage manager.
+        thesis_url:
+  project:
+    title: Projects
+    icon: fas fa-project-diagram
+    list:
+      - title: Desmo Libraries
+        url: "https://github.com/DesmoDeuce/DesmoLibraries"
+        description: >
+          A java library for game creation. This library contains functions that allows
+          simplified sprite manipulation, animated sprites, grid based game board layout, and
+          more.
+      - title: Moentre
+        url: "https://github.com/DesmoDeuce/Moentre"
+        description: >
+          A 5x5 grid based game where two blocks maneuver around three oncoming blocks.
+      - title: Snake
+        url: "https://github.com/DesmoDeuce/Snake"
+        description: >
+          A recreation of the popular game snake, with algorithms to play the game autonomously.
+  skill:
+    title: Skills
+    panelId: skill-panel
+    icon: fas fa-cogs
+    list:
+    skills: |1-
+      - Java
+      - Python
+      - JavaScript
+      - Gimp
+      - Paint 3D
+      - Piano
+      - Sound Engineering
+      - Dance
+  hobby:
+    title: Hobbies
+    icon: fas fa-gamepad
+    list:
+    hobbies: |1-
+      - Music
+      - 3D Printing
+      - Dungeons & Dragons
+      - Backpacking & Outdoors
