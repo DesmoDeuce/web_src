@@ -53,6 +53,11 @@ params:
     title: Experience and Volunteering
     icon: fas fa-briefcase
     list:
+      - position: Sound and Lighting Technician
+        dates: 2024 - *Present*
+        company: Westerville South Theatre
+        details: |1-
+          - Operated sound and lights for theatre rentals.
       - position: Graphic Designer
         dates: 2021 - *Present*
         company: Good Medicine Productions
@@ -60,15 +65,20 @@ params:
           - Worked in a volunteer capacity for a non-profit focused on providing interactive theatre experiences for sick people.
           - Created advertisements for theater camps using graphic design tools.
           - Performed other graphic design duties as necessary.
-      - position: Sound and Lighting Technician
-        dates: 2024 - *Present*
-        company: Westerville South Theatre
-        details: |1-
-          - Operated sound and lights for theatre rentals.
   education:
     title: Education
     icon: fas fa-graduation-cap
     list:
+      - degree: 10th Grade-Present
+        college: Westerville South High School
+        dates: 2023-Present
+        thesis_title: >
+          Pursuing International Baccalaureate (IB) Diploma while participating in Westerville
+          South's award winning theatre program. Through this course of study, I currently take
+          theatre IB courses, and contribute in a variety of ways to Westerville South's Troupe 513,
+          including acting, dancing, singing, sound design, assistant choreography, and assistant
+          stage managing.
+        thesis_url:
       - degree: 6th-9th Grade
         college: Metro Early College Middle and High School
         dates: 2019-2023
@@ -79,20 +89,14 @@ params:
           All Metro students engage in a personally relevant and academically rigorous
           curriculum within a safe and trusting environment.
         thesis_url:
-      - degree: 10th Grade-Present
-        college: Westerville South High School
-        dates: 2023-Present
-        thesis_title: >
-          Pursuing International Baccalaureate (IB) Diploma while participating in Westerville
-          South's award winning theatre program. Through this course of study, I currently take
-          theatre IB courses, and contribute in a variety of ways to Westerville troupe 513,
-          including acting, dancing, singing, sound design, assistant choreography, and assistant
-          stage manager.
-        thesis_url:
   project:
     title: Projects
     icon: fas fa-project-diagram
     list:
+      - title: Lasagne & Bowties
+        url: "https://drive.google.com/drive/folders/1YV8coRopnthLey-PnceWYGbhtsD8yb3Q"
+        description: >
+          A full length musical I wrote about two friends and navigating issues due to success.
       - title: Desmo Libraries
         url: "https://github.com/DesmoDeuce/DesmoLibraries"
         description: >
@@ -116,9 +120,10 @@ params:
       - Java
       - Python
       - JavaScript
+      - Piano
+      - Music Composition
       - Gimp
       - Paint 3D
-      - Piano
       - Sound Engineering
       - Dance
   hobby:
