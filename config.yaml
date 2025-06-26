@@ -8,7 +8,7 @@ params:
   author: Desmond Ducy
   description: Desmond Ducy portfolio.
   copyright: >-
-    powered by [hugo](https://gohugo.io/) & © 2024
+    
   theme:
     mainTheme: dark
     showAttribute: true
