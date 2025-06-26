@@ -27,7 +27,7 @@ params:
     name: "Desmond Ducy"
     tagline: "Polyglot Developer"
     location: "Ohio"
-    photo: profile.jpg
+    photo: headshot.jpg
   social:
     title: Links
     list:
@@ -93,6 +93,10 @@ params:
     title: Projects
     icon: fas fa-project-diagram
     list:
+      - title: Westerville South Theatre Website
+        url: "https://wshstheatre.org"
+        description: >
+          A website I created for Westerville South's Theatre Troupe 513.
       - title: Lasagne & Bowties
         url: "https://drive.google.com/drive/folders/1YV8coRopnthLey-PnceWYGbhtsD8yb3Q"
         description: >
@@ -132,6 +136,7 @@ params:
     list:
     hobbies: |1-
       - Music
+      - Theatre
       - 3D Printing
       - Dungeons & Dragons
       - Backpacking & Outdoors
