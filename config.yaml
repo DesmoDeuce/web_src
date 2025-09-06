@@ -53,11 +53,13 @@ params:
     title: Experience and Volunteering
     icon: fas fa-briefcase
     list:
-      - position: Sound and Lighting Technician
-        dates: 2024 - *Present*
+      - position: Performative and Technical Theatre
+        url: https://docs.google.com/document/d/1vnVq6tESPpFaC36uGLXDFoCtKuuarKpRP-0F726L4NA/
+        dates: 2019 - *Present*
         company: Westerville South Theatre
         details: |1-
-          - Operated sound and lights for theatre rentals.
+          - Performed in plays and musicals.
+          - Worked in depth with build, lighting, and sound.
       - position: Graphic Designer
         dates: 2021 - *Present*
         company: Good Medicine Productions

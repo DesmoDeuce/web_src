@@ -1,9 +1,13 @@
 {{ range.Site.Params.experience.list }}
+{{ if .url }}
+<a href="{{ .url }}" target="_blank">
 <h4 style="text-decoration: underline;">{{ .position }}</h4>
+</a>
+{{ else }}
+<h4 style="text-decoration: underline;">{{ .position }}</h4>
+{{ end }}
 <p {{if .details }}class="mb-0"{{ end }}>
-  {{ .dates | markdownify }} &middot; {{ if .url }}
-  <a href="{{ .url }}">{{ .company }}</a>
-  {{ else }} {{ .company }} {{ end }}
+  {{ .dates | markdownify }} &middot; {{ .company }}
 </p>
 {{ if .details }}
 <div class="prose prose-stone dark:prose-invert max-w-none">
