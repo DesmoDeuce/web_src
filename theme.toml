@@ -12,3 +12,14 @@ theme_version = "2026.05.01"
 [author]
   name = "Darshan Baral"
   homepage = "https://www.darshanbaral.com/"
+
+[security]
+  [security.exec]
+    allow = [
+    '^(dart-)?sass$',
+    '^go$',
+    '^git$',
+    '^node$',
+    '^postcss$',
+    '^tailwindcss$'
+    ]

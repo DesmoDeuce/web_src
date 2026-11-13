@@ -1,18 +1,5 @@
-<script>
-  let elem = document.querySelector("#skill-panel");
-  if (elem) {
-  let skillPanel = elem.previousElementSibling;
-  skillPanel.addEventListener("click", function() {
-    let skillBars = document.querySelectorAll("#skill-percent");
-    skillBars.forEach(elem => {
-      elem.style.width = elem.classList[0];
-    });
-  });
-}
-</script>
-{{ range hugo.Data.skills.list }}
-<code>{{ .skill }}</code>
-<div class="w-full mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.1rem;">
-  <div id="skill-percent" class="{{ .skillrating }}% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
-</div>
-{{ end }}
+<ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  {{ range hugo.Data.skills.list }}
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">{{ . | markdownify }}</li>
+  {{ end }}
+</ul>

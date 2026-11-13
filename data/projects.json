@@ -3,24 +3,29 @@
   "icon": "bi bi-kanban",
   "list": [
     {
-      "title": "Project 1",
-      "url": "#",
-      "description": "Description of the project"
+      "title": "Lasagne & Bowties",
+      "url": "https://drive.google.com/drive/folders/1mdYoEDC_WSeK18CfdE7J8vgs0twgFhqN?usp=sharing",
+      "description": "A full length musical I wrote (and developed a cast recording) about two friends and navigating issues due to success. Full album is available on Spotify and Apple Music."
     },
     {
-      "title": "Project 2",
-      "url": "#",
-      "description": "Description of the project"
+      "title": "Dorian Sunrise",
+      "url": "https://drive.google.com/file/d/1cCs2sGNkIqSq1TT75pYLX2_fjvWhnFxi/view?usp=sharing",
+      "description": "A talk show-style song I composed for Brave Young Voices."
     },
     {
-      "title": "Project 3",
-      "url": "#",
-      "description": "Description of the project"
+      "title": "Out of the Sunlight",
+      "url": "https://drive.google.com/drive/folders/1RlV4JSbgM8xVdtnFISCT0AMZidg6ixdE?usp=sharing",
+      "description": "A full length musical I am almost finished writing about a couple going separate ways due to wanting different things."
     },
     {
-      "title": "Project 4",
-      "url": "#",
-      "description": "Description of the project"
+      "title": "Desmo Libraries",
+      "url": "https://github.com/DesmoDeuce/DesmoLibraries",
+      "description": "A java library for game creation. This library contains functions that allows simplified sprite manipulation, animated sprites, grid based game board layout, and more."
+    },
+    {
+      "title": "Moentre",
+      "url": "https://github.com/DesmoDeuce/Moentre",
+      "description": "A 5x5 grid based game where two blocks maneuver around three oncoming blocks."
     }
   ]
 }

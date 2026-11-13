@@ -2,14 +2,10 @@
   "title": "Hobbies",
   "icon": "bi bi-controller",
   "list": [
-    {
-      "hobby": "Cooking"
-    },
-    {
-      "hobby": "Hiking"
-    },
-    {
-      "hobby": "Baking"
-    }
+    "Piano & Singing",
+    "Theatre",
+    "Game Design",
+    "Dungeons & Dragons",
+    "Backpacking & Outdoors"
   ]
 }

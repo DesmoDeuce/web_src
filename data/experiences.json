@@ -1,27 +1,46 @@
 {
-  "title": "Experiences",
+  "title": "Experience and Volunteering",
   "icon": "bi bi-briefcase",
   "list": [{
-      "position": "Job Title",
-      "dates": "2022 - *Present*",
-      "url": "#",
-      "company": "Company Name"
-    },
-    {
-      "position": "Job Title",
-      "dates": "2019 - 2022",
-      "company": "Company Name",
+      "position": "Composer",
+      "dates": "2026",
+      "url": "https://www.braveyoungvoices.org/",
+      "company": "Brave Young Voices",
       "details": [
-        "Printed from desktop. Sent [emails](#). Called people *using* telephone.",
-        "Drank water from office cooler.",
-        "Ate donuts on people's birthdays."
+        "Wrote a talk show-like theme, ~3 minutes of music.",
+        "Took notes and made adjustments to fit what the director needed."
       ]
     },
     {
-      "position": "Job Title",
-      "dates": "2018 - 2019",
-      "url": "#",
-      "company": "Company Name"
+      "position": "Performative and Technical Theatre",
+      "posUrl": "https://docs.google.com/document/d/1vnVq6tESPpFaC36uGLXDFoCtKuuarKpRP-0F726L4NA/",
+      "dates": "2019 - *Present*",
+      "company": "Various Theatre Companies",
+      "details": [
+        "Performed in plays and musicals.",
+        "Worked in depth with build, lighting, and sound.",
+        "Ran tech for rentals in the auditorium."
+      ]
+    },
+    {
+      "position": "Stage Technician",
+      "dates": "2026 - *Present*",
+      "url": "https://denison.edu/arts",
+      "company": "Denison University",
+      "details": [
+        "Works with lighting and sound setting up for shows."
+      ]
+    },
+    {
+      "position": "Graphic Designer",
+      "dates": "2021 - 2025",
+      "url": "https://www.goodmedicineproductions.org/",
+      "company": "Good Medicine Productions",
+      "details": [
+        "Worked in a volunteer capacity for a non-profit focused on providing interactive theatre experiences for sick people.",
+        "Created advertisements for theater camps using graphic design tools.",
+        "Performed other graphic design duties as necessary."
+      ]
     }
   ]
 }

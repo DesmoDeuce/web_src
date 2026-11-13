@@ -3,23 +3,24 @@
   "icon": "bi bi-mortarboard",
   "list": [
     {
-      "degree": "Ph.D. in Subject",
-      "college": "University of State-City",
-      "dates": "2013 - 2018",
-      "thesis_title": "Effect of humans on other humans: a study of human behavior.",
-      "thesis_url": "#"
+      "degree": "Internation Baccalaureate Diploma",
+      "college": "Westerville South High School",
+      "dates": "2024 - 2026"
     },
     {
-      "degree": "M.S. in Subject",
-      "college": "University of State-City",
-      "dates": "2013 - 2018",
-      "thesis_title": "Effect of humans on other humans: a study of human behavior.",
-      "thesis_url": "#"
+      "degree": "B.A. in Music Composition",
+      "college": "Denison University",
+      "dates": "2026 - *Present*"
     },
     {
-      "degree": "B.S. in Subject",
-      "college": "University of State-City",
-      "dates": "2004 - 2009"
+      "degree": "B.A. in Computer Science",
+      "college": "Denison University",
+      "dates": "2026 - *Present*"
+    },
+    {
+      "degree": "B.A. Minor in Spanish",
+      "college": "Denison University",
+      "dates": "2026 - *Present*"
     }
   ]
 }
