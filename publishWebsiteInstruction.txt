@@ -1,0 +1,7 @@
+hugo server
+#changes
+hugo
+cd ../desmo.github.io
+git add .
+git commit -m "message"
+git push
