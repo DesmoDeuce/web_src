@@ -1,0 +1,477 @@
+<!doctype html>
+<html
+    lang="en-us"
+    class="m-auto  dark "
+><head>
+	<meta name="generator" content="Hugo 0.161.1">
+  
+  <title>Desmond Ducy</title>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta name="theme-color" content="" />
+  <meta name="description" content="Desmond Ducy portfolio." />
+  <meta name="author" content="Desmond Ducy" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+    
+  <link
+    rel="stylesheet"
+    href="/main.min.bf3568978fa851f218e0546fc877296c9ddfdd0648a6415ab6406d91f4367bba.css"
+    integrity="sha256-vzVol4&#43;oUfIY4FRvyHcpbJ3f3QZIpkFatkBtkfQ2e7o="
+    crossorigin="anonymous"
+  />
+   
+
+  <script>
+    const expandAccordion = (elem) => {
+      const allPanels = Array.from(document.querySelectorAll(".panel"));
+      const allAccordion = Array.from(document.querySelectorAll(".accordion"));
+
+      if (!elem.parentElement.classList.contains("active")) {
+        allAccordion.forEach((acc) => {
+          acc.classList.remove("active");
+        });
+        elem.parentElement.classList.add("active");
+        allPanels.forEach(function (elem) {
+          elem.style.maxHeight = null;
+        });
+        let activePanel = elem.parentElement.nextElementSibling;
+        if (
+          activePanel.id != "skill-panel" &&
+          document.querySelector("#skill-panel")
+        ) {
+          let skillBars = Array.from(
+            document.querySelectorAll("#skill-percent"),
+          );
+          skillBars.forEach((elem) => {
+            elem.style.width = "0";
+          });
+        }
+        activePanel.style.maxHeight = activePanel.scrollHeight + "px";
+      }
+    };
+  </script>
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+
+    const setTheme = (theme) => {
+      html.classList.remove("light");
+      if (theme === "dark") {
+        html.classList.add("dark");
+        window.localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        window.localStorage.setItem("theme", "light");
+      }
+      fixThemeToggleIcon(theme);
+    };
+
+    const fixThemeToggleIcon = (theme) => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (themeToggle) {
+        if (theme === "dark") {
+          themeToggle.classList.remove("bi-moon");
+          themeToggle.classList.add("bi-brightness-high");
+        } else {
+          themeToggle.classList.remove("bi-brightness-high");
+          themeToggle.classList.add("bi-moon");
+        }
+      }
+    };
+
+    if (theme == null) {
+      if (html.classList.contains("dark")) {
+        theme = "dark";
+      } else if (html.classList.contains("light")) {
+        theme = "light";
+      } else {
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        if (prefersDark) {
+          theme = "dark";
+        } else {
+          theme = "light";
+        }
+      }
+    }
+
+    setTheme(theme);
+
+    const toggleTheme = () => {
+      html.classList.contains("dark") ? setTheme("light") : setTheme("dark");
+    };
+
+    window.onload = () => {
+      fixThemeToggleIcon(theme);
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 dark:border-gray-300 justify-between"
+>
+  <div>
+    <i
+      class="bi bi-brightness-high theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+      onclick="toggleTheme()"
+    ></i>
+  </div>
+</header>
+
+
+
+    
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker drop-shadow-md p-2 rounded-t-lg">
+      <div class="flex flex-col justify-center">
+        <div
+  class="w-full p-2 flex justify-center align-middle profile-photo-container"
+>
+  <img
+    class="rounded-sm"
+    src="/images/headshot.jpg"
+    alt="Desmond Ducy"
+  />
+</div>
+
+        <div class="px-2 text-center"><h1 class="mb-0 font-normal">Desmond Ducy</h1>
+<h2 class="mb-0 font-normal">Musical Composer and Polyglot Developer</h2>
+<h3 class="mb-4">Columbus, Ohio</h3>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.instagram.com/desmondducy/" target="_blank" rel="noopener noreferrer">
+      <i class="mt-1 bi bi-instagram"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://github.com/DesmoDeuce" target="_blank" rel="noopener noreferrer">
+      <i class="mt-1 bi bi-github"></i>
+    </a>
+  </div>
+  
+</div>
+</div>
+      </div>
+    </div>
+    
+
+  </div>
+  <div class="col-span-3 relative">
+    
+    
+    <div class="px-2">
+      <h2 class="mb-0 accordion active">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-person"></i>
+          About Me</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2 mb-1"
+        
+        
+        
+      >
+        <div class="markdownify-container">
+  
+    <p class="my-2">
+      I am an aspiring composer with a focus in musical theatre but experience with a variety of styles.
+    </p>
+  
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="mb-0 accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-kanban"></i>
+          Projects</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2 mb-1"
+        
+        
+      >
+        
+<h4>
+  <a href="https://drive.google.com/drive/folders/1mdYoEDC_WSeK18CfdE7J8vgs0twgFhqN?usp=sharing" target="_blank" rel="noopener noreferrer">Lasagne &amp; Bowties</a>
+</h4>
+<p class="markdownify indent-8 mb-2">A full length musical I wrote (and developed a cast recording) about two friends and navigating issues due to success. Full album is available on Spotify and Apple Music.</p>
+
+<h4>
+  <a href="https://drive.google.com/file/d/1cCs2sGNkIqSq1TT75pYLX2_fjvWhnFxi/view?usp=sharing" target="_blank" rel="noopener noreferrer">Dorian Sunrise</a>
+</h4>
+<p class="markdownify indent-8 mb-2">A talk show-style song I composed for Brave Young Voices.</p>
+
+<h4>
+  <a href="https://drive.google.com/drive/folders/1RlV4JSbgM8xVdtnFISCT0AMZidg6ixdE?usp=sharing" target="_blank" rel="noopener noreferrer">Out of the Sunlight</a>
+</h4>
+<p class="markdownify indent-8 mb-2">A full length musical I am almost finished writing about a couple going separate ways due to wanting different things.</p>
+
+<h4>
+  <a href="https://github.com/DesmoDeuce/DesmoLibraries" target="_blank" rel="noopener noreferrer">Desmo Libraries</a>
+</h4>
+<p class="markdownify indent-8 mb-2">A java library for game creation. This library contains functions that allows simplified sprite manipulation, animated sprites, grid based game board layout, and more.</p>
+
+<h4>
+  <a href="https://github.com/DesmoDeuce/Moentre" target="_blank" rel="noopener noreferrer">Moentre</a>
+</h4>
+<p class="markdownify indent-8 mb-2">A 5x5 grid based game where two blocks maneuver around three oncoming blocks.</p>
+
+
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="mb-0 accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-briefcase"></i>
+          Experience and Volunteering</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2 mb-1"
+        
+        
+      >
+        
+<h4 style="text-decoration: underline">
+  
+  Composer
+  
+</h4>
+<p class="mb-0">
+  2026 &middot;
+  
+  <a href="https://www.braveyoungvoices.org/" target="_blank" rel="noopener noreferrer">Brave Young Voices</a>
+  
+</p>
+
+
+<ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Wrote a talk show-like theme, ~3 minutes of music.</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Took notes and made adjustments to fit what the director needed.</li>
+  
+</ul>
+ 
+<h4 style="text-decoration: underline">
+  
+  <a href="https://docs.google.com/document/d/1vnVq6tESPpFaC36uGLXDFoCtKuuarKpRP-0F726L4NA/" target="_blank" rel="noopener noreferrer">Performative and Technical Theatre</a>
+  
+</h4>
+<p class="mb-0">
+  2019 - <em>Present</em> &middot;
+  
+  Various Theatre Companies
+  
+</p>
+
+
+<ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Performed in plays and musicals.</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Worked in depth with build, lighting, and sound.</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Ran tech for rentals in the auditorium.</li>
+  
+</ul>
+ 
+<h4 style="text-decoration: underline">
+  
+  Stage Technician
+  
+</h4>
+<p class="mb-0">
+  2026 - <em>Present</em> &middot;
+  
+  <a href="https://denison.edu/arts" target="_blank" rel="noopener noreferrer">Denison University</a>
+  
+</p>
+
+
+<ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Works with lighting and sound setting up for shows.</li>
+  
+</ul>
+ 
+<h4 style="text-decoration: underline">
+  
+  Graphic Designer
+  
+</h4>
+<p class="mb-0">
+  2021 - 2025 &middot;
+  
+  <a href="https://www.goodmedicineproductions.org/" target="_blank" rel="noopener noreferrer">Good Medicine Productions</a>
+  
+</p>
+
+
+<ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Worked in a volunteer capacity for a non-profit focused on providing interactive theatre experiences for sick people.</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Created advertisements for theater camps using graphic design tools.</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Performed other graphic design duties as necessary.</li>
+  
+</ul>
+ 
+
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="mb-0 accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-mortarboard"></i>
+          Education</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2 mb-1"
+        
+        
+      >
+        
+
+<h4 style="text-decoration: underline;">Internation Baccalaureate Diploma</h4>
+<p >2024 - 2026 &middot; Westerville South High School</p>
+
+
+
+<h4 style="text-decoration: underline;">B.A. in Music Composition</h4>
+<p >2026 - <em>Present</em> &middot; Denison University</p>
+
+
+
+<h4 style="text-decoration: underline;">B.A. in Computer Science</h4>
+<p >2026 - <em>Present</em> &middot; Denison University</p>
+
+
+
+<h4 style="text-decoration: underline;">B.A. Minor in Spanish</h4>
+<p >2026 - <em>Present</em> &middot; Denison University</p>
+
+
+
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="mb-0 accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-list-check"></i>
+          Skills</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2 mb-1"
+        
+        id="skill-panel"
+        
+        
+      >
+        <ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Java, Python, Javascript</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Music Composition</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Piano</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">GIMP, Paint 3D</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Sound Engineering</li>
+  
+</ul>
+
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="mb-0 accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-controller"></i>
+          Hobbies</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2 mb-1"
+        
+        
+      >
+        <ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Piano &amp; Singing</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Theatre</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Game Design</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Dungeons &amp; Dragons</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Backpacking &amp; Outdoors</li>
+  
+</ul>
+
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>
